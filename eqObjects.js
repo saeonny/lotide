@@ -45,7 +45,7 @@ const eqObjects = function(object1, object2) {
       // if key1 and key2 are same 
       
       if (key1 === key2){
-        // check key1 value and key2 values are array 
+        // check key1 value and key2 value are array 
         if (Array.isArray(object1[key1]) && Array.isArray(object2[key2])){
           // check if key1 array and key2 array are same
           if(!eqArrays(object1[key1],object2[key2])) {
