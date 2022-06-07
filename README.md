@@ -33,3 +33,4 @@ The following functions are currently implemented:
 * `countLetters(string)`: return a count of each of the letters in given string.
 * `letterPositions(sentence)`: return all the indices (zero-based positions) in the string where each character is found.
 * `findKeyByValue(object, value)`: return a key on an object where its value matches a given value.
+* `map(array, callback)`: return a new array based on the results of the callback function
