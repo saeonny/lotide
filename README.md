@@ -29,3 +29,4 @@ The following functions are currently implemented:
 * `head(array)`: returns the first item in the array. If the array is empty then retun undefined.
 * `tail(array)`: returns the "tail" of an array: everything except for the first item (head) of the provided array.
 * `without(array, remove)`: return a subset of a given array, removing unwanted elements.
+* `countOnly(allItems, itemsToCount)`: will be given an array and an object. It will return an object containing counts of everything that the input object listed.
