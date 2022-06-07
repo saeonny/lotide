@@ -1,14 +1,4 @@
-const assertEqual = function(actual, expected) {
-
-  if (actual === expected) {
-    //return console.log("✅✅✅ Assertion Passed: " + actual + " === " + expected);
-    return console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    //return console.log("🛑🛑🛑 Assertion Failed: " + actual + " !== " + expected);
-    return console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-
-};
+const assertEqual = require('./assertEqual')
 
 const findKeyByValue = function(object,value) {
   const keys = Object.keys(object);
@@ -22,6 +12,7 @@ const findKeyByValue = function(object,value) {
   return realKey;
 };
 
+module.exports = findKeyByValue;
 
 //Test cases
 const bestTVShowsByGenre = {

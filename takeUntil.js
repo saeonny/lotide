@@ -1,33 +1,5 @@
-const eqArrays = function(a1,a2) {
-  // length check, list check
 
-  if (!Array.isArray(a1) && !Array.isArray(a2)) {
-    return false;
-  }
-
-  if (a1.length !== a2.length) {
-    return false;
-  }
-
-  for (let i = 0; i < a1.length; i++) {
-  
-    if (a1[i] !== a2[i]) {
-      return false;
-    }
-  }
-  return true;
-
-
-};
-
-const assertArraysEqual = function(a1,a2) {
-  if (!eqArrays(a1,a2)) {
-    console.log(`🛑🛑🛑 Assertion Failed: [${a1}] !== [${a2}]`);
-  } else if (eqArrays(a1,a2)) {
-    console.log(`✅✅✅ Assertion Passed: [${a1}] === [${a2}]`);
-  }
-
-};
+const assertArraysEqual = require('./assertArraysEqual');
 
 const takeUntil = function(array, callback) {
   let result = [];
@@ -41,6 +13,8 @@ const takeUntil = function(array, callback) {
   }
   return result;
 };
+
+module.exports = takeUntil;
 
 console.log("Test1. Push item until negative num appears");
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
