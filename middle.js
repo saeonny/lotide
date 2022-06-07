@@ -1,24 +1,4 @@
-const eqArrays = function(a1,a2) {
-  // length check, list check
-
-  if (!Array.isArray(a1) && !Array.isArray(a2)) {
-    return false;
-  }
-
-  if (a1.length !== a2.length) {
-    return false;
-  }
-
-  for (let i = 0; i < a1.length; i++) {
-  
-    if (a1[i] !== a2[i]) {
-      return false;
-    }
-  }
-  return true;
-
-
-};
+const eqArrays = require('./eqArrays');
 
 const assertArraysEqual = function(a1,a2) {
   if (!eqArrays(a1,a2)) {
@@ -28,7 +8,6 @@ const assertArraysEqual = function(a1,a2) {
   }
 
 };
-
 
 const middle = function(array) {
   let midIndex;
@@ -52,21 +31,6 @@ const middle = function(array) {
     return result;
   }
 };
+module.exports = middle;
 
 
-// Test Code
-
-////empty array
-assertArraysEqual(middle([]),[]);
-//// 1 item
-assertArraysEqual(middle([1]),[]);
-//// 2 items
-assertArraysEqual(middle([1,2]),[]);
-//// 3 items
-assertArraysEqual(middle([1, 2, 3]),[2]);
-//// 4 items
-assertArraysEqual(middle([1, 2, 3, 4]),[2, 3]);
-//// 5 items
-assertArraysEqual(middle([1, 2, 3, 4, 5]),[3]);
-//// 6 items
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]),[3, 4]);
