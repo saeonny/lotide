@@ -1,7 +1,7 @@
 const head = require('../head.js');
 const assert = require('chai').assert;
 
-describe("head function that returns the first element of given list", () => {
+describe("head function that returns the first element of given array", () => {
   it("returns 1 for [1, 2, 3]", () => {
     assert.strictEqual(head([1, 2, 3]), 1);
   });
