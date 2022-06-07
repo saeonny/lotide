@@ -31,4 +31,4 @@ The following functions are currently implemented:
 * `without(array, remove)`: return a subset of a given array, removing unwanted elements.
 * `countOnly(allItems, itemsToCount)`: will be given an array and an object. It will return an object containing counts of everything that the input object listed.
 * `countLetters(string)`: return a count of each of the letters in given string.
-
+* `letterPositions(sentence)`: return all the indices (zero-based positions) in the string where each character is found.
