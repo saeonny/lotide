@@ -1,8 +1,8 @@
 const assertArraysEqual = require('./assertArraysEqual');
 
-const without = function(origin, remove) {
+const without = function(array, remove) {
   let result = [];
-  for (let o of origin) {
+  for (let o of array) {
     for (let r of remove) {
       if (o !== r) {
         if (result.indexOf(o) === -1) {
