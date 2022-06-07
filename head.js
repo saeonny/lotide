@@ -1,5 +1,5 @@
-const head = function (list){
-  return list[0];
+const head = function(array) {
+  return array[0];
 };
 
 module.exports = head;

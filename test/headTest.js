@@ -7,19 +7,19 @@ describe("head function that returns the first element of given array", () => {
   });
 
   it("returns '5' for ['5']", () => {
-    assert.strictEqual(head(['5']), '5'); 
+    assert.strictEqual(head(['5']), '5');
   });
 
   it("returns 5 for [5]", () => {
-    assert.strictEqual(head([5]), 5); 
+    assert.strictEqual(head([5]), 5);
   });
 
   it("returns 'hello' for ['hello', 'lighthouse', 'good']", () => {
-    assert.strictEqual(head(['hello', 'lighthouse', 'good']), 'hello'); 
+    assert.strictEqual(head(['hello', 'lighthouse', 'good']), 'hello');
   });
 
   it("returns undefined for [] or empty array", () => {
-    assert.strictEqual(head([]), undefined); 
+    assert.strictEqual(head([]), undefined);
   });
 
 });
